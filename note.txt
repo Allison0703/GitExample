@@ -1,0 +1,35 @@
+GitHub
+account:allison8173@gmail.com
+Git
+
+1.git安裝,官網下載https://git-scm.com/
+2.命令提示字元
+3.指令git config先設定使用者名稱和email
+
+
+指令：非git開頭的指令,主要是linux指令,有可在win替代的寫在斜線後方
+pwd/cd：目前位置
+ls/dir：列出所有檔案及資料夾
+ls -l:列出檔案及資料夾（包括詳細資料）
+ls -lh
+cd：前往
+clear：清空畫面
+touch filename.ext：建立檔案
+rm filename.ext：刪除檔案
+rm -rf dirname：刪除資料夾
+cp filename.ext　new_filename.ext：複製檔案
+cp -r dirname new_dirname：複製資料夾
+mv filename.ext dirname：移動檔案
+mv filename.ext new_name.ext：更改檔名
+mkdir dirname：建立資料夾
+cat filename.txt：看檔案內容
+
+git init：初始化（進到要進行版本控制的資料夾後使用，初始化完成後，會變成master）
+git log：查詢版本管理紀錄
+git status：查看目前狀態
+git add filename.ext：將單一檔案添加版本管理檔案（尚未commit）
+git add .：所有檔案添加
+git commit -m "添加敘述"　（要注意沒有設定使用者名稱和email無法成功commit）
+git config --global --list 可以查詢使用者名稱和email
+git config --global user.name 欲修改名稱
+                    user.email 同上
