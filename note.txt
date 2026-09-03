@@ -3,7 +3,7 @@ account:allison8173@gmail.com
 Git
 
 1.git安裝,官網下載https://git-scm.com/
-2.命令提示字元
+2.命令提示字元或使用git bash(這裡就可以用linux語法)
 3.指令git config先設定使用者名稱和email
 
 
@@ -13,8 +13,9 @@ ls/dir：列出所有檔案及資料夾
 ls -l:列出檔案及資料夾（包括詳細資料）
 ls -lh
 cd：前往
-clear：清空畫面
-touch filename.ext：建立檔案
+clear/cls：清空畫面
+q：有End出現可以使用這個離開
+touch/type nul > filename.ext：建立檔案
 rm filename.ext：刪除檔案
 rm -rf dirname：刪除資料夾
 cp filename.ext　new_filename.ext：複製檔案
