@@ -5,6 +5,7 @@ Git
 1.git安裝,官網下載https://git-scm.com/
 2.命令提示字元或使用git bash(這裡就可以用linux語法)
 3.指令git config先設定使用者名稱和email
+4.在欲做版控的資料夾下，先用git init指令進行初始化
 
 指令：非git開頭的指令,主要是linux指令,有可在win替代的寫在斜線後方
 pwd/cd：目前位置
@@ -37,7 +38,21 @@ git config --global user.name 欲修改名稱
 新增、修改、刪除、變更檔案名稱（每次的變更都使用add）
 1.新增檔案：add → commit
 2.修改檔案：add → commit
-3.刪除檔案：add/rm
+3.刪除檔案：add/rm → commit
+4.變更檔名：add → commit
 
 
+Git資料模型
 
+．執行時會發生
+工作目錄（Working directory）→ add → 暫存區（Index(cache)）→ commit → 本地數據庫（Local repository）
+→ push → 遠端數據庫（Remote repository 如GitHub...）
+
+．Pull時會發生
+Remote repository → Local repository → Working directory
+
+．Fetch時會發生（單純下載至本地數據庫）
+Remote repository → Local repository
+
+．Checkout時會發生
+Local repository → Working directory
