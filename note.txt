@@ -15,8 +15,8 @@ cd：前往
 clear/cls：清空畫面
 q：有End出現可以使用這個離開
 touch/type nul > filename.ext：建立檔案
-rm filename.ext：刪除檔案
-rm -rf dirname：刪除資料夾
+rm filename.ext/del filename.ext：刪除檔案
+rm -rf dirname/rmdir dirname：刪除資料夾
 cp filename.ext　new_filename.ext：複製檔案
 cp -r dirname new_dirname：複製資料夾
 mv filename.ext dirname：移動檔案
@@ -34,9 +34,10 @@ git config --global --list 可以查詢使用者名稱和email
 git config --global user.name 欲修改名稱
                     user.email 同上
 
-新增、修改、刪除、變更檔案名稱
+新增、修改、刪除、變更檔案名稱（每次的變更都使用add）
 1.新增檔案：add → commit
-2.修改檔案：
+2.修改檔案：add → commit
+3.刪除檔案：add/rm
 
 
 
