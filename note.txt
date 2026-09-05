@@ -6,7 +6,6 @@ Git
 2.命令提示字元或使用git bash(這裡就可以用linux語法)
 3.指令git config先設定使用者名稱和email
 
-
 指令：非git開頭的指令,主要是linux指令,有可在win替代的寫在斜線後方
 pwd/cd：目前位置
 ls/dir：列出所有檔案及資料夾
@@ -34,3 +33,10 @@ git commit -m "添加敘述"　（要注意沒有設定使用者名稱和email�
 git config --global --list 可以查詢使用者名稱和email
 git config --global user.name 欲修改名稱
                     user.email 同上
+
+新增、修改、刪除、變更檔案名稱
+1.新增檔案：add → commit
+2.修改檔案：
+
+
+
