@@ -25,15 +25,19 @@ mv filename.ext new_name.ext：更改檔名
 mkdir dirname：建立資料夾
 cat filename.txt：看檔案內容
 
+git config --global --list 可以查詢使用者名稱和email
+git config --global user.name 欲修改名稱
+                    user.email 同上
 git init：初始化（進到要進行版本控制的資料夾後使用，初始化完成後，會變成master）
 git log：查詢版本管理紀錄
 git status：查看目前狀態
 git add filename.ext：將單一檔案添加版本管理檔案（尚未commit）
 git add .：所有檔案添加
 git commit -m "添加敘述"　（要注意沒有設定使用者名稱和email無法成功commit）
-git config --global --list 可以查詢使用者名稱和email
-git config --global user.name 欲修改名稱
-                    user.email 同上
+				
+git diff filename.ext：比較修改前後的檔案內容
+git show：顯示commit的修改紀錄
+ 
 
 新增、修改、刪除、變更檔案名稱（每次的變更都使用add）
 1.新增檔案：add → commit
