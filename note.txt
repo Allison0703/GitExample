@@ -35,8 +35,8 @@ git add filename.ext：將單一檔案添加版本管理檔案（尚未commit）
 git add .：所有檔案添加
 git commit -m "添加敘述"　（要注意沒有設定使用者名稱和email無法成功commit）
 				
-git diff filename.ext：比較修改前後的檔案內容
-git show：顯示commit的修改紀錄
+git diff filename.ext：比較修改前後的檔案內容（不輸入檔名會顯示所有更改的檔案內容）
+git show：顯示commit的修改紀錄，會顯示修改後的檔案內容
  
 
 新增、修改、刪除、變更檔案名稱（每次的變更都使用add）
