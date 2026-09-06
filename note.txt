@@ -36,7 +36,9 @@ git add .：所有檔案添加
 git commit -m "添加敘述"　（要注意沒有設定使用者名稱和email無法成功commit）
 				
 git diff filename.ext：比較修改前後的檔案內容（不輸入檔名會顯示所有更改的檔案內容）
-git show：顯示commit的修改紀錄，會顯示修改後的檔案內容
+git show commit_id：顯示commit的修改紀錄，會顯示修改後的檔案內容
+gitk：版控歷程紀錄視窗畫面
+git blame filename.ext：顯示每一行內容的<sha1 ID>、作者、時間...等資訊
  
 
 新增、修改、刪除、變更檔案名稱（每次的變更都使用add）
