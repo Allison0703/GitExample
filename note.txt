@@ -26,13 +26,14 @@ mkdir dirname：建立資料夾
 cat filename.txt：看檔案內容
 
 git config --global --list 可以查詢使用者名稱和email
-git config --global user.name 欲修改名稱
-                    user.email 同上
+git config --global user.name "欲修改名稱"
+                    user.email "同上"
 git init：初始化（進到要進行版本控制的資料夾後使用，初始化完成後，會變成master）
 git log：查詢版本管理紀錄
+git log --oneline：版本管理紀錄以一行一行顯示
 git status：查看目前狀態
 git add filename.ext：將單一檔案添加版本管理檔案（尚未commit）
-git add .：所有檔案添加
+git add ./*.md：所有檔案添加/某檔案類型全部添加
 git commit -m "添加敘述"　（要注意沒有設定使用者名稱和email無法成功commit）
 				
 git diff filename.ext：比較修改前後的檔案內容（不輸入檔名會顯示所有更改的檔案內容）
@@ -62,3 +63,6 @@ Remote repository → Local repository
 
 ．Checkout時會發生
 Local repository → Working directory
+
+
+GitHub&GitLab（雲端儲存庫平台）
