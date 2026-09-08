@@ -65,4 +65,5 @@ Remote repository → Local repository
 Local repository → Working directory
 
 
-GitHub&GitLab（雲端儲存庫平台）
+GitHub&GitLab（雲端協作平台）
+上傳專案：
