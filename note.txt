@@ -23,7 +23,7 @@ cp -r dirname new_dirname：複製資料夾
 mv filename.ext dirname：移動檔案
 mv filename.ext new_name.ext：更改檔名
 mkdir dirname：建立資料夾
-cat filename.txt：看檔案內容
+cat/type filename.txt：看檔案內容
 
 git config --global --list 可以查詢使用者名稱和email
 git config --global user.name "欲修改名稱"
@@ -40,7 +40,11 @@ git diff filename.ext：比較修改前後的檔案內容（不輸入檔名會�
 git show commit_id：顯示commit的修改紀錄，會顯示修改後的檔案內容
 gitk：版控歷程紀錄視窗畫面
 git blame filename.ext：顯示每一行內容的<sha1 ID>、作者、時間...等資訊
- 
+
+git branch：查看目前所有分支
+git branch <分支名稱>：建立新分支
+git branch -d <分支名稱>：刪除本地分支
+git branch -M <欲改分支名稱>：更改分支名稱
 
 新增、修改、刪除、變更檔案名稱（每次的變更都使用add）
 1.新增檔案：add → commit
@@ -67,3 +71,22 @@ Local repository → Working directory
 
 GitHub&GitLab（雲端協作平台）
 上傳專案：
+1.先到GitHub頁面登入後，右上角頭向點Settings>Developer settings>personal access tokens>Fine-grained tokens產生一個新的token
+2.設置的部分，access repository項目設為"only select repository"並選取欲存取的repository，
+Permissions的地方添加勾選Contents項目，並把權限設置為read and write，產生金鑰後複製下來保存
+3.輸入指令，使用者名稱和token
+git remote add <自訂遠端儲存庫名稱> "https://github.com/Allison0703/GitExample.git"：設定遠端儲存庫位置資訊
+git push -u <遠端儲存庫名稱origin> <分支名稱main>（本機分支名稱也有可能是master）
+4.-u是用來建立upstream（源頭）的語法，origin為自訂的遠端repository名稱，故以後要push只要輸入git push就行了
+
+相關指令
+git remote：查看遠端儲存庫名稱
+git remote -v：查看遠端儲存庫位址資訊
+git remote show <遠端儲存庫名稱>：查看remote的詳細設置
+git remote set-url <遠端儲存庫名稱> "https://github.com/Allison0703/NewProject.git"：更改儲存庫位址
+git remote remove <遠端儲存庫名稱>：刪除遠端儲存庫地址資訊
+git remote rename <原始名稱> <新名稱>：儲存庫資訊更名
+
+頁面功能簡介
+進入該檔案右側有history為commit的歷史紀錄
+
