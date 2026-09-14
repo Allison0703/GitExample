@@ -97,4 +97,6 @@ git pull：從遠端儲存庫下載最新資料到本地儲存庫，並將資料
 
 工作目錄與儲存庫的互動
 git checkout <sha1>：把歷史紀錄資料取出來放到工作目錄上，或是想切換回某個版本
+git checkout <sha1> <file>/.：取出sha1版本的file/全部檔案至工作目錄,但HEAD位置不變
+
 
