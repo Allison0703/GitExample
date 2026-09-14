@@ -39,6 +39,7 @@ git commit -m "添加敘述"　（要注意沒有設定使用者名稱和email�
 git diff filename.ext：比較修改前後的檔案內容（不輸入檔名會顯示所有更改的檔案內容）
 git show <sha1>：顯示commit的修改紀錄，會顯示修改後的檔案內容
 gitk：版控歷程紀錄視窗畫面
+git config --global gui.encoding utf-8：gitk繁中亂碼可以使用這個修改
 git blame filename.ext：顯示每一行內容的<sha1 ID>、作者、時間...等資訊
 
 git branch：查看目前所有分支
@@ -96,7 +97,8 @@ git fetch：從遠端儲存庫下載最新資料到本地儲存庫
 git pull：從遠端儲存庫下載最新資料到本地儲存庫，並將資料取出至工作目錄
 
 工作目錄與儲存庫的互動
-git checkout <sha1>：把歷史紀錄資料取出來放到工作目錄上，或是想切換回某個版本
-git checkout <sha1> <file>/.：取出sha1版本的file/全部檔案至工作目錄,但HEAD位置不變
-
+git checkout <sha1>：把歷史紀錄資料取出來放到工作目錄上，或是想切換回某個版本（HEAD位址會變動）
+git checkout <sha1> <file>/.：單取出sha1版本的file/全部檔案至工作目錄（HEAD位置不變）
+git checkout <分支名稱main>：也可以依分支名稱切換目前位置
+git checkout HEAD/-- <file>/.：取出HEAD版本的file/全部檔案至工作目錄
 
